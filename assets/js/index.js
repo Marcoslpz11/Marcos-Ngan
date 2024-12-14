@@ -85,8 +85,8 @@ window.addEventListener("scroll", function () {
   document.querySelector(".p-mv_mainImg").style.transform = "translateY(" + (-0.5 * scrollPosition) + "px)";
 });
 
-const btnSpain = document.querySelector('.language__item.spain a[href="#ES"]');
-const btnVietnam = document.querySelector('.language__item.vietnam a[href="#VN"]');
+const btnSpain = document.querySelector('.language__link.spain a[href="#ES"]');
+const btnVietnam = document.querySelector('.language__link.vietnam a[href="#VN"]');
 const itemsEsp = document.querySelectorAll('.esp');
 const itemsVtn = document.querySelectorAll('.vtn');
 
