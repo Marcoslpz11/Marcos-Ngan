@@ -85,7 +85,6 @@ window.addEventListener("scroll", function () {
   document.querySelector(".p-mv_mainImg").style.transform = "translateY(" + (-0.5 * scrollPosition) + "px)";
 });
 
-// Seleccionamos los elementos necesarios
 const btnSpain = document.querySelector('.language__item.spain a[href="#ES"]');
 const btnVietnam = document.querySelector('.language__item.spain a[href="#VN"]');
 const itemsEsp = document.querySelectorAll('.esp');
