@@ -86,7 +86,7 @@ window.addEventListener("scroll", function () {
 });
 
 const btnSpain = document.querySelector('.language__item.spain a[href="#ES"]');
-const btnVietnam = document.querySelector('.language__item.spain a[href="#VN"]');
+const btnVietnam = document.querySelector('.language__item.vietnam a[href="#VN"]');
 const itemsEsp = document.querySelectorAll('.esp');
 const itemsVtn = document.querySelectorAll('.vtn');
 
