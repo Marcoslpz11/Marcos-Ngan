@@ -85,8 +85,9 @@ window.addEventListener("scroll", function () {
   document.querySelector(".p-mv_mainImg").style.transform = "translateY(" + (-0.5 * scrollPosition) + "px)";
 });
 
-const btnSpain = document.querySelector('.language__link.spain a[href="#ES"]');
-const btnVietnam = document.querySelector('.language__link.vietnam a[href="#VN"]');
+// Seleccionamos los elementos correctamente (sin usar el href en el selector)
+const btnSpain = document.querySelector('.language__link.spain');
+const btnVietnam = document.querySelector('.language__link.vietnam');
 const itemsEsp = document.querySelectorAll('.esp');
 const itemsVtn = document.querySelectorAll('.vtn');
 
@@ -118,7 +119,6 @@ function activateLanguage(language) {
     btnVietnam.parentElement.style.display = 'none'; // Ocultar botón de Vietnam
   }
 }
-
 
 btnSpain.addEventListener('click', (event) => {
   event.preventDefault(); // Prevenimos el comportamiento por defecto
