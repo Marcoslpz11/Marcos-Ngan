@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +9,7 @@
   <title>Marcos & Ngan</title>
   <link rel="stylesheet" href="./assets/css/splide-core.min.css">
   <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="./assets/css/language.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -15,6 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:wght@400..900&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
   <div class="p-mv_mainImg">
     <img src="assets\images\mv_img.jpg" class="c-ofiCover">
@@ -22,7 +25,8 @@
   </div>
   <section class="p-mv" id="top">
     <h2 class="c-title --white"><span class="en c-fontC">Ngan & Marcos</span>
-      <span class="es">Os invitamos a nuestra boda</span>
+      <span class="es esp">Os invitamos a nuestra boda</span>
+      <span class="es vtn">Chúng tôi xin mời các bạn đến dự lễ cưới của mình</span>
     </h2>
   </section>
   <header class="l-header" id="js-header">
@@ -32,35 +36,48 @@
           <img src="assets\images\logo-black.webp" class="u-w100" loading="eager" alt="">
         </a>
         <div class="l-countdown">
-          <span class="l-countdown__title">Faltan </span>
-          <div class="l-countdown__time" id="time">
+          <span class="l-countdown__title esp">Faltan </span>
+          <div class="l-countdown__time esp" id="time">
             <span class="days"></span> Días
+          </div>
+          <span class="l-countdown__title vtn">Chỉ còn </span>
+          <div class="l-countdown__time vtn" id="time">
+            <span class="days"></span> ngày nữa
           </div>
         </div>
       </div>
       <ul class="l-header__list">
         <li class="l-header__item">
           <a href="#about" class="l-header__link">
-            <span class="l-header__text">
+            <span class="l-header__text esp">
               Los Novios
+            </span>
+            <span class="l-header__text vtn">
+              Cô dâu chú rể
             </span>
           </a>
         </li>
         <li class="l-header__item">
           <a href="#event" class="l-header__link">
-            <span class="l-header__text">
+            <span class="l-header__text esp">
               Lugar y Fecha
+            </span>
+            <span class="l-header__text vtn">
+              Địa điểm và ngày
             </span>
           </a>
         </li>
         <li class="l-header__item">
           <a href="#gallery" class="l-header__link">
-            <span class="l-header__text">
-              Gallery
+            <span class="l-header__text esp">
+              Galería
+            </span>
+            <span class="l-header__text vtn">
+              Phòng trưng bày
             </span>
           </a>
         </li>
-        <li class="l-header__item">
+        <li class="l-header__item esp">
           <a href="#other" class="l-header__link">
             <span class="l-header__text">
               FAQ
@@ -69,8 +86,11 @@
         </li>
         <li class="l-header__item">
           <a href="#message" class="l-header__link">
-            <span class="l-header__text">
-              Message
+            <span class="l-header__text esp">
+              Mensaje
+            </span>
+            <span class="l-header__text vtn">
+              Tin nhắn
             </span>
           </a>
         </li>
@@ -88,22 +108,25 @@
           <li class="l-headerNav__item c-fontB">
             <a href="#about" class="l-headerNav__link u-white">
               <span class="l-headerNav__en u-white other">About</span>
-              <span class="l-headerNav__jp u-white c-fontC">Los Novios</span>
+              <span class="l-headerNav__jp esp u-white c-fontC">Los Novios</span>
+              <span class="l-headerNav__jp vtn u-white c-fontC">Cô dâu chú rể</span>
             </a>
           </li>
           <li class="l-headerNav__item c-fontB">
             <a href="#event" class="l-headerNav__link u-white">
               <span class="l-headerNav__en  u-white other">Event</span>
-              <span class="l-headerNav__jp u-white c-fontC">Dónde y Cuándo</span>
+              <span class="l-headerNav__jp esp u-white c-fontC">Dónde y Cuándo</span>
+              <span class="l-headerNav__jp vtn u-white c-fontC">Cô dâu chú rể</span>
             </a>
           </li>
           <li class="l-headerNav__item c-fontB">
             <a href="#gallery" class="l-headerNav__link u-white">
-              <span class="l-headerNav__en  u-white other">Gallery</span>
-              <span class="l-headerNav__jp u-white c-fontC">Otras Fotos</span>
+              <span class="l-headerNav__en u-white other">Gallery</span>
+              <span class="l-headerNav__jp esp u-white c-fontC">Otras Fotos</span>
+              <span class="l-headerNav__jp vtn u-white c-fontC">Phòng trưng bày</span>
             </a>
           </li>
-          <li class="l-headerNav__item c-fontB">
+          <li class="l-headerNav__item c-fontB esp">
             <a href="#other" class="l-headerNav__link u-white">
               <span class="l-headerNav__en u-white other">Other</span>
               <span class="l-headerNav__jp u-white c-fontC">Preguntas y Respuestas</span>
@@ -112,19 +135,37 @@
           <li class="l-headerNav__item c-fontB">
             <a href="#message" class="l-headerNav__link u-white">
               <span class="l-headerNav__en u-white other">Message</span>
-              <span class="l-headerNav__jp u-white c-fontC">Mensaje de los Novios</span>
+              <span class="l-headerNav__jp esp u-white c-fontC">Mensaje de los Novios</span>
+              <span class="l-headerNav__jp vtn u-white c-fontC">Tin nhắn</span>
             </a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+  <ul class="language__wrap">
+    <li class="language__item vtn">
+      <a href="#es" class="language__link">
+        <div class="language__img">
+          <img src="assets\images\spain_flag.png" class="u-w100">
+        </div>
+      </a>
+    </li>
+    <li class="language__item esp">
+      <a href="#VN" class="language__link">
+        <div class="language__img">
+          <img src="assets\images\vietnam_flag.webp" class="u-w100">
+        </div>
+      </a>
+    </li>
+  </ul>
   <main class="l-main">
     <section class="p-about" id="about">
       <div class="c-inner">
         <h2 class="c-title2 fadeUp iv">
           <span class="en c-fontB">ABOUT</span>
-          <span class="es c-fontC">Novio & Novia</span>
+          <span class="es esp c-fontC">Novio & Novia</span>
+          <span class="es vtn c-fontC">Chú rể & Cô dâu</span>
           <div class="c-title2__thumb">
             <div class="c-title2__line"></div>
             <i class="far fa-heart text-dark"></i>
@@ -134,9 +175,11 @@
         <ul clas="p-about__list">
           <li class="p-about__item fadeUp iv">
             <div class="p-about__desc">
-              <h3 class="p-about__title c-fontB">El Novio</h3>
-              <p class="p-about__text">Poco después de llegar a Japón conocí a Ngan, y desde ese momento, algo cambió en mi vida. Después de 4
-                años y medio de momentos compartidos, supe que era hora de dar el siguiente paso.</p>
+              <h3 class="p-about__title c-fontB esp">El Novio</h3>
+              <h3 class="p-about__title c-fontB vtn">Chú rể</h3>
+              <p class="p-about__text esp">Poco después de llegar a Japón conocí a Ngan, y desde ese momento, algo
+                cambió en mi vida. Después de 4 años y medio de momentos compartidos, supe que era hora de dar el siguiente paso.</p>
+                <p class="p-about__text vtn">Chỉ ít lâu sau khi đến Nhật Bản, tôi gặp Ngan, và từ đó, một điều gì đó đã thay đổi trong cuộc đời tôi. Sau 4 năm rưỡi cùng nhau chia sẻ những khoảnh khắc, tôi biết đã đến lúc bước tiếp.</p>
               <div class="p-about__thumb">
                 <i class="fa-solid fa-snowman"></i>
                 <span class="p-about__sign c-fontC">Marcos</span>
@@ -148,9 +191,12 @@
           </li>
           <li class="p-about__item fadeUp iv">
             <div class="p-about__desc">
-              <h3 class="p-about__title c-fontB">La Novia</h3>
-              <p class="p-about__text">En la ciudad de Sakai, hace 5 años nuestros caminos se cruzaron, y desde entonces, hemos compartido infinidad de momentos juntos. Después de 5 años
+              <h3 class="p-about__title esp c-fontB">La Novia</h3>
+              <h3 class="p-about__title vtn c-fontB">Cô dâu</h3>
+              <p class="p-about__text esp">En la ciudad de Sakai, hace 5 años nuestros caminos se cruzaron, y desde
+                entonces, hemos compartido infinidad de momentos juntos. Después de 5 años
                 y medio de compartir nuestra historia, estoy lista para dar este hermoso paso juntos.</p>
+                <p class="p-about__text vtn">Tại thành phố Sakai, 5 năm trước, chúng ta đã gặp nhau, và từ đó, chúng ta đã chia sẻ vô số khoảnh khắc bên nhau. Sau 5 năm rưỡi cùng nhau viết nên câu chuyện của mình, tôi sẵn sàng bước tiếp bước đi tuyệt vời này cùng nhau.</p>
               <div class="p-about__thumb">
                 <i class="fa-solid fa-crown"></i>
                 <span class="p-about__sign c-fontC">Ngan</span>
@@ -167,17 +213,21 @@
       <div class="c-inner">
         <h2 class="c-title2 fadeUp iv">
           <span class="en c-fontB">EVENT</span>
-          <span class="es c-fontC">Donde & Cuando</span>
+          <span class="es c-fontC esp">Donde & Cuando</span>
+          <span class="es c-fontC vtn">Cô dâu chú rể</span>
           <div class="c-title2__thumb">
             <div class="c-title2__line"></div>
             <i class="far fa-heart text-dark"></i>
             <div class="c-title2__line"></div>
           </div>
         </h2>
-        <p class="p-event__text fadeUp iv">
+        <p class="p-event__text esp fadeUp iv">
           Al ser una boda en Vietnam, vamos a hacer la pre-ceremonia vietnamita también.<br>
           Todavía no hemos decidido el lugar de esta, pero cuando se decida, lo escribiremos aquí.<br>
           La ceremonia tradicional será en el hotel Diamond Bay Resort & Spa en Nha Trang.
+        </p>
+        <p class="p-event__text vtn fadeUp iv">
+          Vì là một đám cưới ở Việt Nam, chúng tôi cũng sẽ tổ chức lễ cưới truyền thống Việt Nam.<br> Chúng tôi chưa quyết định địa điểm tổ chức, nhưng khi có quyết định, chúng tôi sẽ ghi thông tin tại đây.<br> Lễ cưới chính thức sẽ diễn ra tại khách sạn Diamond Bay Resort & Spa ở Nha Trang.
         </p>
         <ul class="p-event__list">
           <li class="p-event__item fadeUp iv">
@@ -185,9 +235,11 @@
               <img src="assets\images\vietnamese.png" class="c-ofiCover">
             </div>
             <div class="p-event__desc">
-              <span class="p-event__title c-fontB">Pre-ceremonia</span>
-              <span class="p-event__address">"Dirección no decidida"</span>
-              <span class="p-event__time">"Hora no decidida"</span>
+              <span class="p-event__title esp c-fontB">Pre-ceremonia</span>
+              <span class="p-event__title vtn c-fontB">Lễ tiền hôn</span>
+              <span class="p-event__address esp">"Daremos la direccion más adelante"</span>
+              <span class="p-event__address vtn">"Chúng tôi sẽ cung cấp địa chỉ sau"</span>
+              <span class="p-event__time">10:00</span>
             </div>
           </li>
           <li class="p-event__item fadeUp iv">
@@ -196,7 +248,8 @@
               <div class="p-event__img">
               </div>
               <div class="p-event__desc">
-                <span class="p-event__title c-fontB">Ceremonia y Cena</span>
+                <span class="p-event__title esp c-fontB">Ceremonia y Cena</span>
+                <span class="p-event__title vtn c-fontB">Lễ cưới và Tiệc cưới</span>
                 <span class="p-event__address">Hotel Diamond Bay Resort & Spa<br>Nguyễn Tất Thành, Phước Hạ, Nha Trang,
                   Khánh Hòa 650000, Vietnam</span>
                 <span class="p-event__time">04/05/2025 17:00~</span>
@@ -209,7 +262,8 @@
     <section class="p-gallery" id="gallery">
       <h2 class="c-title2 fadeUp iv">
         <span class="en c-fontB">GALLERY</span>
-        <span class="es c-fontC">Otras Fotos</span>
+        <span class="es c-fontC esp">Otras Fotos</span>
+        <span class="es c-fontC vtn">Phòng trưng bày</span>
         <div class="c-title2__thumb">
           <div class="c-title2__line"></div>
           <i class="far fa-heart text-dark"></i>
@@ -268,11 +322,11 @@
         </div>
       </div>
     </section>
-    <section class="p-other" id="other">
+    <section class="p-other esp" id="other">
       <div class="c-inner">
         <h2 class="c-title2 fadeUp iv">
           <span class="en c-fontB">OTHER</span>
-          <span class="es c-fontC">Preguntas y Respuestas</span>
+          <span class="es c-fontC esp">Preguntas y Respuestas</span>
           <div class="c-title2__thumb">
             <div class="c-title2__line"></div>
             <i class="far fa-heart text-dark"></i>
@@ -297,7 +351,7 @@
           <li class="p-other__item fadeUp iv">
             <div class="p-other__question">
               <span class="p-other__letter"></span>
-              <span class="p-other__title c-fontB">¿Hay algún tipo de etiqueta especial para la ceremonia?</span>
+              <span class="p-other__title c-fontB esp">¿Hay algún tipo de etiqueta especial para la ceremonia?</span>
             </div>
             <div class="p-other__answer">
               <span class="p-other__letter c-fontC">A</span>
@@ -359,28 +413,31 @@
       <div class="c-inner">
         <h2 class="c-title2 fadeUp iv">
           <span class="en c-fontB">MESSAGE</span>
-          <span class="es c-fontC">Mensaje de los Novios</span>
+          <span class="es c-fontC esp">Mensaje de los Novios</span>
+          <span class="es c-fontC vtn">Lời nhắn từ cô dâu chú rể</span>
           <div class="c-title2__thumb">
             <div class="c-title2__line"></div>
             <i class="far fa-heart text-dark"></i>
             <div class="c-title2__line"></div>
           </div>
         </h2>
-        <p class="p-message__text fadeUp iv">¡Estamos esperando con muchísima ilusión que llegue el día de nuestra boda
-          para poder
-          compartirlo con todos vosotros y que nuestras familias se reúnan por primera vez!<br> Deseamos que, cuando
+        <p class="p-message__text fadeUp iv esp">¡Estamos esperando con muchísima ilusión que llegue el día de nuestra
+          boda para poder compartirlo con todos vosotros y que nuestras familias se reúnan por primera vez!<br> Deseamos que, cuando
           llegue ese momento tan especial, todos se lo pasen genial y que sea una experiencia inolvidable para
-          todos.<br>¡Contamos los días para vivirlo juntos! </p>
+          todos.<br>¡Contamos los días para vivirlo juntos!</p>
+        <p class="p-message__text fadeUp iv vtn">Chúng tôi rất háo hức chờ đón ngày cưới để có thể chia sẻ niềm vui này với tất cả các bạn và để hai gia đình gặp nhau lần đầu tiên!<br> Chúng tôi mong rằng, khi đến ngày đặc biệt đó, mọi người sẽ có một khoảng thời gian tuyệt vời và đây sẽ là một trải nghiệm không thể quên đối với tất cả.<br> Chúng tôi đang đếm từng ngày để cùng nhau trải nghiệm khoảnh khắc này!</p>
         <div class="p-message__img">
           <img src="assets\images\waiting.jpg" class="c-ofiCover">
         </div>
-        <span class="p-message__catch c-fontC">Os esperamos en Vietnam</span>
+        <span class="p-message__catch c-fontC esp">Os esperamos en Vietnam</span>
+        <span class="p-message__catch c-fontC vtn">Chúng tôi mong được gặp các bạn vào ngày cưới!</span>
       </div>
     </section>
     <section class="p-countdown">
       <h2 class="c-title2 fadeUp iv">
         <span class="en c-fontB">COUNTDOWN</span>
-        <span class="es c-fontC">Cuenta Atrás</span>
+        <span class="es c-fontC esp">Cuenta Atrás</span>
+        <span class="es c-fontC vtn">Đếm ngược</span>
         <div class="c-title2__thumb">
           <div class="c-title2__line"></div>
           <i class="far fa-heart text-dark"></i>
@@ -396,11 +453,17 @@
               <span class="minutes2"></span>
               <span class="seconds2"></span>
             </th>
-            <td class="p-countdown__desc">
+            <td class="p-countdown__desc esp">
               <span>Días</span>
               <span>Horas</span>
               <span>Minutos</span>
               <span>Segundos</span>
+            </td>
+            <td class="p-countdown__desc vtn">
+              <span>Ngày</span>
+              <span>Giờ</span>
+              <span>Phút</span>
+              <span>Giây</span>
             </td>
           </tr>
         </table>
@@ -411,7 +474,9 @@
   <footer class="l-footer">
     <div class="c-inner">
       <h2 class="c-title2">
-        <span class="es c-fontC u-white">Gracias</span>
+        <span class="es c-fontC u-white esp">Gracias</span>
+        <span class="es c-fontC u-white vtn">Cảm ơn</span>
+        
         <div class="c-title2__thumb">
           <div class="c-title2__line"></div>
           <i class="far fa-heart u-white"></i>
@@ -443,7 +508,7 @@
   <script src="./assets/js/lib.js"></script>
   <script src="./assets/js/scripts.min.js"></script>
   <script src="./assets/js/splide.min.js"></script>
-  <script src="./assets/js/index.min.js"></script>
+  <script src="./assets/js/index.js"></script>
   <script src="https://kit.fontawesome.com/4c9a75ff8a.js" crossorigin="anonymous"></script>
 </body>
 

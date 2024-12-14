@@ -1,0 +1,14 @@
+.language__wrap{
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  background-color: white;
+}
+.language__link{
+  padding: 10px 30px 0 20px;
+  height: auto;
+  border-radius: 25px 0 0 25px;
+}
+.language__img{
+  width: 100%;
+}
