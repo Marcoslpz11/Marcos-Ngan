@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Contador para la fecha de la boda
-var weddingDate = new Date("2025-05-05T17:00:00").getTime();
+var weddingDate = new Date("2025-05-04T17:00:00").getTime();
 var countdownInterval = setInterval(function () {
   var now = new Date().getTime();
   var timeLeft = weddingDate - now;
