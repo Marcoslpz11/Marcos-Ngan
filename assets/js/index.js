@@ -60,6 +60,7 @@ var countdownInterval = setInterval(function () {
   var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
   document.querySelector(".days").innerText = days;
+  document.querySelector(".days3").innerText = days;
 }, 1000);
 
 // Segundo contador para una fecha adicional
